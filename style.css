@@ -1,0 +1,155 @@
+/* FONT GOOGLE OUTFIT */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* TEMPLATE  COLOR*/
+    :root{
+    --Slate300: hsl(212, 45%, 89%);
+    --Slate500: hsl(216, 15%, 48%);
+    --Slate900: hsl(218, 44%, 22%);
+    }
+
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit',sans-serif;
+}
+
+body{
+    background-color: var(--Slate300);
+    font-size: 0.68rem;
+}
+
+/* main start */
+.container{
+    height: 100dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg_qr{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    background-color: hsl(0,0%,100%);
+    width: 320px;
+    padding: .7rem 0;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* image items start */
+.items_qr{
+    width: 288px;
+    height: 288px;
+    border-radius: .5rem;
+    overflow: hidden;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
+    -webkit-filter: drop-shadow(0 2px 5px rgba(0,0,0,0.3));
+}
+
+.items_qr img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* image items end */
+
+/* text start */
+.des_qr{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text_top{
+    color: var(--Slate900);
+    font-size: 22px;
+    padding: 1rem 0;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.text_bottom{
+    width: 85%;
+    color: var(--Slate500);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+     margin-bottom: 1rem ;
+}
+/* text end */
+
+
+/* main end */
+
+/* footer start */
+.attribution{
+    letter-spacing: 1.3px;
+    padding-top: 3rem;
+}
+
+.attribution a{
+    color: black;
+    text-decoration: none;
+}
+/* footer end */
+
+
+/* media quary start */
+
+/* media 600px */
+
+@media screen and (max-width:700px){
+    .bg_qr{
+        width: 300px;
+    }
+    
+    .items_qr{
+        width: 260px;
+        height: 260px;
+    }
+
+    .text_top{
+        font-size: 17px;
+    }
+
+    .text_bottom{
+        font-size: 13px;
+    }
+}
+
+/* media 370px */
+@media screen and (max-width:370px){
+    .bg_qr{
+        width: 258px;
+    }
+
+    .items_qr{
+        width: 230px;
+        height: 230px;
+    }
+
+    .text_top{
+        font-size: 15px;
+    }
+
+    .text_bottom{
+        font-size: 12px;
+    }
+
+    .attribution {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+/* media quari end */
